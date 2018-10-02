@@ -21,12 +21,15 @@ def prog():
     valor = float(valor/participantes)
     print('Cada um vai pagar R$%.2f pelo rolê mitológico!' %valor)
 
+def repetir():
+    while True:
+        print ('')
+        repetir = str(input('Deseja repetir o cálculo? S = Sim - N = Não. '))
+        if repetir == 's':
+            prog()
+        else:
+            quit()
+
 bemvindo()
 prog()
-while True:
-    print ('')
-    repetir = str(input('Deseja repetir o cálculo? S = Sim - N = Não. '))
-    if repetir == 's':
-        prog()
-    else:
-        quit()
+repetir()
